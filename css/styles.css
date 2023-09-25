@@ -2,3 +2,54 @@
     padding: 0;
     margin: 0;
 }
+
+/* Normalizacion */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilos */
+body {
+    background-color: #1b1b1b;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header__logo {
+    font-weight: 600;
+    font-size: 40px;
+    color: #24618f;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header__link {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #24618f;
+    padding: 5px 10px;
+}
+
+.header__link--active,
+.header__link:hover {
+    background-color: #1971c2;
+    color: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
